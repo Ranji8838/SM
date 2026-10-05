@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kali AI - SM</title><link rel="stylesheet" href="../css/style.css">
+<style>
+.kali-shell{max-width:900px;margin:20px auto 70px;padding:0 15px}.chat-container{margin:0;max-width:none}
+.chat-header{display:flex;align-items:center;gap:14px}.kali-avatar{width:46px;height:46px;border-radius:50%;background:#fff;display:grid;place-items:center;color:#2563eb;font-size:25px}
+.chat-sub{opacity:.9;font-size:13px}.chat-messages{min-height:420px;max-height:58vh;overflow-y:auto}.message p{white-space:pre-wrap;margin-top:6px}.message strong{font-size:13px}.typing{opacity:.65;font-style:italic}.chat-input{gap:8px}.chat-input input{border-radius:10px!important}.chat-input button{border-radius:10px!important;min-width:90px}.status{font-size:12px;color:#64748b;margin-top:8px}.quick{display:flex;gap:8px;flex-wrap:wrap;padding:0 25px 18px}.quick button,.kali-controls button{border:1px solid #dbe3ef;background:#fff;border-radius:20px;padding:8px 12px;cursor:pointer}.kali-controls{display:flex;gap:8px;flex-wrap:wrap;padding:0 25px 18px}.kali-controls button:hover,.quick button:hover{transform:translateY(-1px)}
+</style></head>
+<body><div id="navbar-container"></div>
+<section class="page-header"><h1>🤖 Kali AI</h1><p>Your personal SM study assistant</p></section>
+<div class="kali-shell"><div class="chat-container">
+<div class="chat-header"><div class="kali-avatar">🤖</div><div><h2>Kali</h2><div class="chat-sub">Study Assistant • Ask naturally in Hindi or English</div></div></div>
+<div id="chatMessages" class="chat-messages"><div class="message kali-message"><strong>Kali</strong><p>Namaste! 👋 Main Kali hoon, SM ka AI Study Assistant. Aap mujhse Maths, Physics, Chemistry, study planning ya SM ke baare mein kuch bhi pooch sakte hain.</p></div></div>
+<div class="quick"><button data-q="Mujhe Physics kaise padhna chahiye?">Physics help</button><button data-q="Explain matrices simply">Maths help</button><button data-q="Gattermann-Schmitt reaction samjhao">Chemistry help</button></div>
+<div class="chat-input"><input id="chatInput" autocomplete="off" placeholder="Kali se kuch bhi poochiye..."><button id="sendButton">Send</button></div>
+<div class="status" id="status">AI backend: localhost:3000 • Demo fallback enabled</div>
+</div></div>
+<script src="../js/navbar.js"></script><script src="../js/kali.js"></script></body></html>

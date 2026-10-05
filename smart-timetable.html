@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Timetable - SM</title><link rel="stylesheet" href="../css/style.css"></head>
+<body><div id="navbar-container"></div>
+<section class="page-header"><h1>🗓️ Smart Timetable</h1><p>Plan study sessions, track progress and keep your routine organized.</p></section>
+<div class="container">
+  <div class="content-box">
+    <h2>➕ Add Study Session</h2>
+    <form id="timetableForm" class="smart-form">
+      <input id="ttSubject" required placeholder="Subject / Topic">
+      <input id="ttDate" required type="date">
+      <input id="ttStart" required type="time">
+      <input id="ttEnd" required type="time">
+      <select id="ttType"><option>Study</option><option>Revision</option><option>Practice</option><option>Test</option></select>
+      <button class="btn" type="submit">Add Session</button>
+    </form>
+  </div>
+  <div class="content-box">
+    <div class="section-row"><div><h2>📅 My Timetable</h2><p id="ttSummary" class="muted"></p></div>
+    <button class="btn secondary-btn" id="clearTimetable">Clear All</button></div>
+    <div id="timetableList"></div>
+  </div>
+</div>
+<script src="../js/navbar.js"></script><script src="../js/smart-timetable.js"></script></body></html>
